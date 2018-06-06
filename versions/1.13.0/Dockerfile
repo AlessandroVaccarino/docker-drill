@@ -20,7 +20,7 @@ RUN apt-get update && \
 RUN sudo mkdir -p /opt/drill
 
 # Download Drill
-RUN wget -O /opt/drill/apache-drill.tar.gz http://it.apache.contactlab.it/drill/drill-$DRILL_VERSION/apache-drill-1.13.0.tar.gz
+RUN wget -O /opt/drill/apache-drill.tar.gz http://it.apache.contactlab.it/drill/drill-$DRILL_VERSION/apache-drill-$DRILL_VERSION.tar.gz
 
 # Extract Drill from tar.gz and delete downloaded file
 RUN sudo tar -xvzf /opt/drill/apache-drill.tar.gz -C /opt/drill
