@@ -17,14 +17,14 @@ RUN apt-get update && \
     apt-get clean
 
 # Create Drill folder
-RUN sudo mkdir -p /opt/drill
+RUN mkdir -p /opt/drill
 
 # Download Drill
 RUN wget -O /opt/drill/apache-drill.tar.gz http://it.apache.contactlab.it/drill/drill-$DRILL_VERSION/apache-drill-$DRILL_VERSION.tar.gz
 
 # Extract Drill from tar.gz and delete downloaded file
-RUN sudo tar -xvzf /opt/drill/apache-drill.tar.gz -C /opt/drill
-RUN sudo rm /opt/drill/apache-drill.tar.gz
+RUN tar -xvzf /opt/drill/apache-drill.tar.gz -C /opt/drill
+RUN rm /opt/drill/apache-drill.tar.gz
 
 # add boostrap.sh file, with Drill launcher
 ADD bootstrap.sh /etc/bootstrap.sh
