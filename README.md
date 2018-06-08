@@ -7,7 +7,7 @@ An Embedded Mode installation of [Apache Drill](https://drill.apache.org/) into 
 
 To run your first Drill container, just type:
 
-`docker run -p 8047:8047 -it -d alessandrov87/docker-drill /etc/bootstrap.sh`
+`docker run -p 8047:8047 -p 31010:31010 -it -d alessandrov87/docker-drill /etc/bootstrap.sh`
 
 It will download the latest version of Apache Drill available, create a container, start Apache Drill and expose web interface on port 8047.
 
