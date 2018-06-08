@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 LABEL maintainer="alessandrov87 (https://github.com/AlessandroVaccarino)"
-#
+
 ENV DRILL_VERSION 1.13.0
 
 # Install dev tools
