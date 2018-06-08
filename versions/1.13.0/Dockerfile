@@ -31,3 +31,7 @@ ADD bootstrap.sh /etc/bootstrap.sh
 RUN chown root:root /etc/bootstrap.sh
 RUN chmod 700 /etc/bootstrap.sh
 ENV BOOTSTRAP /etc/bootstrap.sh
+
+# Expose ports
+EXPOSE 8047
+EXPOSE 31010
